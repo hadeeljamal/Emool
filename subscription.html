@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Start sec-nav -->
+    <section class="sec-nav" dir="rtl">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="index.html"
+            ><img src="img/logo/LOGO.svg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span><i class="fa-solid fa-grip-lines"></i></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                  الرئيسية <span class="sr-only">(current)</span></a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="sala.html"> الباقات </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Questions.html"> أسئلة شائعة </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-success" href="signup.html"> تسجيل دخول </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- End sec-nav -->
+    <!-- Start subscription -->
+    <section class="mx-auto subscription" dir="rtl">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-sm-6 mt-5">
+            <form>
+              <div class="form-group">
+                <label for="name"> إسم المتجر </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  aria-describedby="name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="Emai1">البريد الالكتروني</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="Emai1"
+                  aria-describedby="Emai1"
+                />
+              </div>
+              <div class="form-group">
+                <label for="tel"> رقم الجوال </label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="tel"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password"> كلمة المرور </label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  aria-describedby="password"
+                />
+              </div>
+              <div class="form-group">
+                <label for="confirm password"> تأكيد كلمة المرور </label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="confirm password"
+                />
+              </div>
+              <div class="form-group">
+                <label for="code">أدخل كود الخصم </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="code"
+                  aria-describedby="code"
+                  
+                />
+                </div>
+                <div class="form-group">
+                  <label for="#Package"> أختر الباقة المناسبة </label>
+                  <select class="custom-select form-control" id="Package">
+                    <option selected class="text-left"> الباقة الذهبية
+                    </option>
+                    <option value="1" class="text-left"> باقة الكلاسيكية
+                    </option>
+                    <option value="2" class="text-left"> الباقة البرونزية
+                    </option>
+                    <option value="3" class="text-left"> باقة مجانية
+                    </option>
+                  </select>
+                </div>
+              <p class="text-center mt-3 mb-3">
+                أخي التاجر يمكنك الدفع بأحد البطائق الائتمانية أو مدى أو التحويل البنكي حيث أنه لن 
+                يتم طلب الدفع إلا بعد انتهاء المدة المجانية
+              </p>
+              <div class="form-group">
+                <select class="custom-select form-control" id="inlineFormCustomSelectPref">
+                  <option selected class="text-left">تحويل بنكي</option>
+                  <option value="1" class="text-left">تحويل بنكي</option>
+                  <option value="2" class="text-left">تحويل بنكي</option>
+                  <option value="3" class="text-left">تحويل بنكي</option>
+                </select>
+              </div>
+              
+              <button type="button" class="btn btn-success w-100 submitcolor mt-3" data-toggle="modal" data-target="#MobileVerification">
+                إشتراك
+              </button>
+
+            </form>
+          </div>
+    </section>
+    <!-- End subscription -->
+    <!-- Modal -->
+
+
+  <div class="modal fade" id="MobileVerification" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p class="text-center">  
+            التحقق من الجوال بإدخال رمز التحقق المرسل  
+          </p>
+          <form>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+              />
+            </div>
+            <button type="button" class="btn btn-success w-100 submitcolor " data-toggle="modal" data-target="#emphasis">
+              تأكيد
+            </button>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="emphasis" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p class="text-center">  
+            مرحبا بك في قافلة التجار في ايمول تم 
+            ارسال بيانات المتجر على البريد
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Start sec-footer -->
+    <footer class="sec-footer" dir="rtl">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <h4 class="text-center">من نحن</h4>
+            <p>
+              نحن منصة الكترونية تابعة لمؤسسة لمحة البرمجية لتقنية المعلومات
+              مؤسسة رسمية بسجل رقم 4031084331 المسجلة في وزارة التجارة بالسعودية
+              حيث نهتم بكل ما يتعلق باهتمام وشغف التاجر، نسعى إلى تحقيق آمال
+              التجار ، إن منصتنا تساند التاجر وتلبي جميع متطلباته .فركز على نمو
+              تجارتك ،واترك لنا مهمة تشغيل متجرك الالكتروني.
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <h4 class="text-center">روابط مهمة</h4>
+            <p class="text-center">الرئيسية</p>
+            <p class="text-center">باقاتنا</p>
+            <p class="text-center">طلب الباقة</p>
+            <p class="text-center">أسئلة شائعة</p>
+          </div>
+          <div class="col-lg-3">
+            <h4 class="text-center">معلومات اكثر</h4>
+            <p class="text-center">منصة الكترونية شاملة</p>
+            <p class="text-center">مقرها/ السعودية</p>
+            <p class="text-center"><a href="#">info@e-mole.net</a></p>
+          </div>
+          <div class="col-lg-3">
+            <h4 class="text-center">التواصل الاجتماعي</h4>
+            <p>
+              يمكنك مراسلتنا في أي وقت تريد من نموذج التواصل وإذا واجهتك مشكلة
+              في الدفع مع إحدى المتاجر على المنصة، اضغط على انشاء تذكرة
+            </p>
+            <p class="text-center">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="sec-subfooter">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="text-center">جميع الحقوق محفوظة</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End sec-footer -->
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/my.js"></script>
+  </body>
+</html>
